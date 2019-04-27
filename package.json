@@ -1,0 +1,22 @@
+{
+  "name": "tensorflowjsguide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luis0794/tensorflowJsGuide.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luis0794/tensorflowJsGuide/issues"
+  },
+  "homepage": "https://github.com/luis0794/tensorflowJsGuide#readme",
+  "dependencies": {
+    "@tensorflow/tfjs": "^1.1.0"
+  }
+}
