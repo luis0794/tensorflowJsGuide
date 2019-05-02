@@ -5,6 +5,7 @@ module.exports = {
 
         //-------- Tensors --------//
 
+        //-------- A tf.Tensor can be created from an array with the tf.tensor() method: --------//
         console.log(`------- Creating tensors -------`)
         // Create a rank-2 tensor (matrix) matrix tensor from a multidimensional array.
         const a = tf.tensor([[1,2], [3,4]]);
@@ -17,6 +18,7 @@ module.exports = {
         console.log(`\nshape: ${ b.shape }`);
         b.print();
 
+        //-------- Changing the shape of a Tensor -------- //
         const c = tf.tensor([[1, 2], [3, 4]], [2, 2], "int32");
         console.log(`\nshape: ${ c.shape }`);
         console.log(`dtype: ${ c.dtype }`);
