@@ -2,6 +2,9 @@ const tf = require("@tensorflow/tfjs");
 
 module.exports = {
     init(){
+
+        //-------- Tensors --------//
+
         console.log(`------- Creating tensors -------`)
         // Create a rank-2 tensor (matrix) matrix tensor from a multidimensional array.
         const a = tf.tensor([[1,2], [3,4]]);
@@ -21,11 +24,11 @@ module.exports = {
 
         console.log(`\n------- Changing the shape of a Tensor -------`)
         const d = tf.tensor([[1, 2], [3, 4]]);
-        console.log('a shape:', d.shape);
+        console.log(`\nshape: ${ d.shape }`);
         d.print();
 
-        const e = a.reshape([4, 1]);
-        console.log('b shape:', e.shape);
+        const e = d.reshape([4, 1]);
+        console.log(`\nshape: ${ e.shape }`);
         e.print();
     }
 }
